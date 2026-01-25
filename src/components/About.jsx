@@ -18,7 +18,7 @@ const About = () => {
                 {/* Replaced placeholder with actual image */}
                 <div className="image-container">
                   <img 
-                    src="src/assets/anum.jpg" 
+                    src="public/anum.jpg" 
                     alt={anumData.personal.name}
                     className="profile-image"
                   />
