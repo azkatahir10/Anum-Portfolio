@@ -15,9 +15,12 @@ const About = () => {
           <div className="about-main slide-left">
             <div className="about-card">
               <div className="about-image">
-                {/* Replaced placeholder with actual image */}
                 <div className="image-container">
-                    <img src="/anum.jpg" alt="Anum Tahir" />
+                  <img
+                    src="/anum.jpg"
+                    alt={anumData.personal.name}
+                    className="profile-image"
+                  />
                 </div>
               </div>
               
@@ -114,23 +117,30 @@ const About = () => {
           width: 220px;
           height: 220px;
           position: relative;
+          flex-shrink: 0;
+          isolation: isolate;
         }
-
+        
         .profile-image {
           width: 100%;
           height: 100%;
+          box-sizing: border-box;
           object-fit: cover;
+          object-position: center top;
           border-radius: 50%;
           border: 6px solid white;
           box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
           transition: all 0.4s ease;
+          position: relative;
+          z-index: 1;
+          display: block;
         }
-
+        
         .profile-image:hover {
           transform: scale(1.05);
           box-shadow: 0 20px 50px rgba(108, 99, 255, 0.25);
         }
-
+        
         .image-container::before {
           content: '';
           position: absolute;
@@ -138,9 +148,13 @@ const About = () => {
           left: -10px;
           right: -10px;
           bottom: -10px;
-          background: linear-gradient(135deg, ${theme.colors.primary}, ${theme.colors.secondary});
+          background: linear-gradient(
+            135deg,
+            ${theme.colors.primary},
+            ${theme.colors.secondary}
+          );
           border-radius: 50%;
-          z-index: -1;
+          z-index: 0;
           opacity: 0.6;
         }
 
