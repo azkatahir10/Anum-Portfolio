@@ -91,7 +91,7 @@ export const anumData = {
       ]
     },
 
-  /*  {
+    {
       period: "01/2022 - 05/2022",
 
       title: "Teaching Assistant - Data Science",
@@ -148,7 +148,7 @@ export const anumData = {
         "LaTeX"
       ]
     }
-    */
+    
 
   ],
 
