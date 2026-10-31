@@ -193,7 +193,7 @@ const Contact = () => {
                 <span>📍</span>
               </div>
               <h3>Location</h3>
-              <p>Lahore, Pakistan</p>
+              <p>Dammam, Saudi Arabia</p>
               <p className="info-note">Available for remote work worldwide</p>
             </div>
             
