@@ -11,7 +11,7 @@ export const anumData = {
 
     location: "Ewa Qamar Al Sharq, Corniche, Dammam, Saudi Arabia",
 
-    email: "anumtahir1830@gmail.com",
+    email: "anumtahir.professional@gmail.com",
     phone: "+966 530248738",
 
     linkedin: "https://linkedin.com/in/anum-tahir18",
